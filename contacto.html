@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+  <title>Softdile</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img class="logo__imagen" src="https://dummyimage.com/300x80/7a7a7a/fff.png" alt="Logo"></a>   
+    </div>
+    <nav>
+      <ul class="menu">
+        <li class="menu__item">
+          <a class="menu__link" href="index.html">HOME</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="servicios.html">SERVICIOS</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="clientes.html">CLIENTES</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="contacto.html">CONTACTO</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="soporte.html">SOPORTE TECNICO</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <h1 class="titulo-seccion">Contáctenos y nos comunicaremos a la brevedad!</h1>
+    <form class="contacto">
+      <ul class="contacto__lista">
+        <li class="contacto__item">
+            <input type="text" name="nombre" class="contacto__input contacto__input--left" placeholder="Nombre" />
+            <input type="email" name="email" class="contacto__input contacto__input--right" placeholder="Email" />
+        </li>
+        <li class="contacto__item">
+            <input type="tel" name="telefono" class="contacto__input contacto__input--left" placeholder="Teléfono/Whatsapp" />
+            <label for="preferencia" class="contacto__label">Preferencia de contacto</label><br>
+            <select name="preferencia" class="contacto__input contacto__input--right">
+              <option value="1">Email</option>
+              <option value="2">Whatsapp</option>
+              <option value="3">Teléfono</option>
+            </select>
+        </li>
+        <li class="contacto__item">
+          <label for="empresa">Es una empresa</label>
+          <input type="checkbox" name="empresa" value="1"/>
+        </li>
+        <li class="contacto__item">
+          <textarea name="mensaje" class="contacto__input contacto__input--full" placeholder="Mensaje"></textarea>
+        </li>
+        <li class="contacto__botones">
+          <input class="contacto__boton" type="submit" value="Enviar"/>
+          <input class="contacto__boton" type="reset" value="Limpiar"/>
+        </li>
+      </ul>
+    </form>
+  </section>
+  <footer>
+    <p>Copyright 2021. Todos los derechos reservados</p>
+    <ul class="redes">
+      <li class="redes__item"><a href="#"><img src="https://dummyimage.com/50x50/7a7a7a/fff.png"/></a></li>
+      <li class="redes__item"><a href="#"><img src="https://dummyimage.com/50x50/7a7a7a/fff.png"/></a></li>
+      <li class="redes__item"><a href="#"><img src="https://dummyimage.com/50x50/7a7a7a/fff.png"/></a></li>
+    </ul>
+  </footer>
+</body>
+</html>
