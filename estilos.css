@@ -1,5 +1,5 @@
 body {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -47,9 +47,16 @@ section {
   justify-content: space-around;
 }
 
+.clientes__item {
+  transition: transform 0.5s;
+}
+.clientes__item:hover {
+  transform: translate(0px, 20px);
+}
+
 /*-------------MENU--------------*/
 header {
-  background-color: rgba(14, 184, 51, 0.411);
+  background-image: linear-gradient(to right, green, #9696b1);
   margin-bottom: 50px;
 }
 
@@ -66,7 +73,7 @@ header {
 
 .menu__link {
   text-decoration: none;
-  color: #0e2d2a;
+  color: white;
   font-size: 18px;
   padding: 25px 20px;
   display: inline-block;
@@ -106,7 +113,7 @@ nav {
 
 /*------------FOOTER---------------*/
 footer {
-  background-color: rgba(14, 184, 51, 0.411);
+  background-image: linear-gradient(to right, green, #9696b1);
   margin-top: auto;
 }
 
@@ -196,10 +203,10 @@ footer p {
 .grilla {
   display: grid;
   grid-template-areas:
-    "titulo titulo titulo"
-    "cliente1 cliente2 cliente3"
-    "cliente4 cliente5 cliente6"
-    "contacto contacto contacto";
+    'titulo titulo titulo'
+    'cliente1 cliente2 cliente3'
+    'cliente4 cliente5 cliente6'
+    'contacto contacto contacto';
   grid-template-rows: 1fr 4fr 4fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
