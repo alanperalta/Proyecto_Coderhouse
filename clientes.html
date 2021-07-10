@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="estilos.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <title>Softdile</title>
 </head>
 <body>
@@ -33,9 +35,38 @@
         </li>
       </ul>
     </nav>
+    <a id="boton-menu-mobile"  class="btn offcanvas_btn" href="#menu-mobile" role="button" aria-controls="menu-mobile">
+      <img src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2012/10/threelines.png" data-bs-target="#menu-mobile" data-bs-toggle="offcanvas" class="boton-menu-mobile__img">
+    </a>
+    
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="menu-mobile" aria-labelledby="menu-mobile">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menú principal</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="menu-mobile">
+          <li class="menu-mobile_item">
+            <a class="menu__link" href="index.html">HOME</a>
+          </li>
+          <li class="menu-mobile_item">
+            <a class="menu__link" href="servicios.html">SERVICIOS</a>
+          </li>
+          <li class="menu-mobile_item">
+            <a class="menu__link" href="clientes.html">CLIENTES</a>
+          </li>
+          <li class="menu-mobile_item">
+            <a class="menu__link" href="contacto.html">CONTACTO</a>
+          </li>
+          <li class="menu-mobile_item">
+            <a class="menu__link" href="soporte.html">SOPORTE TECNICO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </header>
+  <h1 class="titulo-seccion" id="titulo-grilla">Nuestros clientes</h1>
   <section class="grilla">
-    <h1 class="titulo-seccion" id="titulo-grilla">Nuestros clientes</h1>
     <a href="#" id="cliente1"><img src="https://dummyimage.com/300x300/7a7a7a/fff.png" alt="Cliente1"></a>
     <a href="#" id="cliente2"><img src="https://dummyimage.com/300x300/7a7a7a/fff.png" alt="Cliente2"></a>
     <a href="#" id="cliente3"><img src="https://dummyimage.com/300x300/7a7a7a/fff.png" alt="Cliente3"></a>
@@ -44,6 +75,38 @@
     <a href="#" id="cliente6"><img src="https://dummyimage.com/300x300/7a7a7a/fff.png" alt="Cliente6"></a>
     <div id="contacto-grilla">
       <a href="contacto.html">Contactanos</a> y sumate vos también!
+    </div>
+  </section>
+  <section class="carrousel-clientes">
+    <div id="carrousel_clientes" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://dummyimage.com/300x300/7a7a7a/fff.png" class="d-block w-100" alt="Cliente1">
+        </div>
+        <div class="carousel-item">
+          <img src="https://dummyimage.com/300x300/7a7a7a/fff.png" class="d-block w-100" alt="Cliente2">
+        </div>
+        <div class="carousel-item">
+          <img src="https://dummyimage.com/300x300/7a7a7a/fff.png" class="d-block w-100" alt="Cliente3">
+        </div>
+        <div class="carousel-item">
+          <img src="https://dummyimage.com/300x300/7a7a7a/fff.png" class="d-block w-100" alt="Cliente4">
+        </div>
+        <div class="carousel-item">
+          <img src="https://dummyimage.com/300x300/7a7a7a/fff.png" class="d-block w-100" alt="Cliente5">
+        </div>
+        <div class="carousel-item">
+          <img src="https://dummyimage.com/300x300/7a7a7a/fff.png" class="d-block w-100" alt="Cliente6">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carrousel_clientes" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carrousel_clientes" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
     </div>
   </section>
   <footer>
