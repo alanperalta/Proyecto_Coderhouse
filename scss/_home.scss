@@ -40,10 +40,17 @@
 
 .brand__texto {
   font-size: 20px;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 
 .brand__titulo {
   font-size: 70px;
+  @media (max-width: 767px) {
+    font-size: 50px;
+  }
 }
 
 .brand__imagen {
@@ -51,3 +58,21 @@
   max-height: 400px;
 }
 /*-----------FIN IMAGEN HOME---------------*/
+
+.servicios-home {
+  display: flex;
+  p {
+    @media (max-width: 500px) {
+      display: none;
+    }
+  }
+}
+
+.servicio-home {
+  text-align: center;
+  padding: 20px;
+}
+
+.servicio__imagen--home {
+  max-width: 100%;
+}

@@ -46,6 +46,9 @@ header {
   font-size: 18px;
   padding: $padding ($padding - 5);
   display: inline-block;
+  @media (max-width: 1200px) {
+    color: black;
+  }
 }
 
 .menu__link:hover {
@@ -60,6 +63,9 @@ header {
   position: relative;
   display: inline-block;
   margin-top: 10px;
+  @media (max-width: 500px) {
+    width: 150px;
+  }
 }
 
 .logo__imagen {

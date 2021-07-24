@@ -34,15 +34,34 @@
 
 .brand__texto {
   font-size: 20px; }
+  @media (max-width: 767px) {
+    .brand__texto {
+      display: none; } }
 
 .brand__titulo {
   font-size: 70px; }
+  @media (max-width: 767px) {
+    .brand__titulo {
+      font-size: 50px; } }
 
 .brand__imagen {
   width: 100%;
   max-height: 400px; }
 
 /*-----------FIN IMAGEN HOME---------------*/
+.servicios-home {
+  display: flex; }
+  @media (max-width: 500px) {
+    .servicios-home p {
+      display: none; } }
+
+.servicio-home {
+  text-align: center;
+  padding: 20px; }
+
+.servicio__imagen--home {
+  max-width: 100%; }
+
 /*------------FOOTER---------------*/
 footer {
   background-image: linear-gradient(to right, green, #9696b1);
@@ -53,6 +72,9 @@ footer {
     display: inline-block;
     padding: 1em;
     color: white; }
+    @media (max-width: 500px) {
+      footer p {
+        width: 100%; } }
 
 .redes,
 .redes__item {
@@ -101,6 +123,9 @@ header {
   font-size: 18px;
   padding: 25px 20px;
   display: inline-block; }
+  @media (max-width: 1200px) {
+    .menu__link {
+      color: black; } }
 
 .menu__link:hover {
   background-color: #005b1c;
@@ -113,6 +138,9 @@ header {
   position: relative;
   display: inline-block;
   margin-top: 10px; }
+  @media (max-width: 500px) {
+    .logo {
+      width: 150px; } }
 
 .logo__imagen {
   max-height: 100%;
@@ -142,18 +170,8 @@ nav {
   max-width: 50%;
   margin-left: 20px; }
 
-.servicios-home {
-  display: flex; }
-
-.servicio-home {
-  text-align: center;
-  padding: 20px; }
-
 .servicio__imagen {
   box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35); }
-
-.servicio__imagen--home {
-  max-width: 100%; }
 
 /*---------FIN SERVICIOS---------------*/
 /*---------GRILLA CLIENTES---------------*/
