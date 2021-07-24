@@ -35,27 +35,9 @@
   grid-area: contacto;
 }
 
-#cliente1 {
-  grid-area: cliente1;
-}
-
-#cliente2 {
-  grid-area: cliente2;
-}
-
-#cliente3 {
-  grid-area: cliente3;
-}
-
-#cliente4 {
-  grid-area: cliente4;
-}
-
-#cliente5 {
-  grid-area: cliente5;
-}
-
-#cliente6 {
-  grid-area: cliente6;
+@for $i from 1 to 7 {
+  #cliente#{$i} {
+    grid-area: cliente#{$i};
+  }
 }
 /*---------FIN GRILLA CLIENTES---------------*/
