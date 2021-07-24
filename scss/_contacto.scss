@@ -1,0 +1,58 @@
+/*-------FORMULARIO DE CONTACTO-----*/
+.contacto {
+  max-width: 650px;
+  background: #fafafa;
+  padding: 30px;
+  margin: 50px auto;
+  box-shadow: 1px 1px 25px rgba(#000, 0.35);
+  border-radius: 10px;
+  border: 6px solid rgba(14, 184, 51, 0.411);
+}
+.contacto__lista {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.contacto__item {
+  display: block;
+  margin-bottom: 10px;
+  min-height: 35px;
+}
+.contacto__input {
+  box-sizing: border-box;
+  padding: 8px;
+  border: 1px solid #b0cfe0;
+  width: 40%;
+}
+.contacto__input:focus {
+  box-shadow: 0 0 5px #b0cfe0;
+  border: 1px solid #b0cfe0;
+}
+.contacto__input--left {
+  float: left;
+}
+.contacto__input--right {
+  float: right;
+}
+.contacto__input--full {
+  width: 100%;
+  height: 100px;
+}
+
+.contacto__label {
+  float: right;
+  margin-right: 10%;
+  margin-bottom: 5px;
+}
+
+.contacto__boton {
+  background-color: rgb(14, 184, 51);
+  border: 1px solid rgb(14, 184, 51);
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 8px 18px;
+  text-decoration: none;
+}
+
+/*------------FIN Formulario de Contacto-----------------*/

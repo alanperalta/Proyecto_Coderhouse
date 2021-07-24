@@ -1,0 +1,41 @@
+@import 'variables';
+@import 'home';
+@import 'footer';
+@import 'menu';
+@import 'servicio';
+@import 'clientes';
+@import 'contacto';
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+table {
+  border: 1px solid;
+}
+
+th {
+  background-color: #82c596;
+  border: 1px solid;
+}
+
+tr,
+td {
+  border: 1px solid;
+}
+
+h1 {
+  color: red;
+}
+
+section {
+  margin: 8px;
+}
+
+.soporte__parrafo {
+  line-height: 1.5em;
+}

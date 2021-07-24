@@ -1,0 +1,53 @@
+.divisor {
+  border: 1px solid rgba(14, 184, 51, 0.411);
+}
+
+.titulo-seccion {
+  text-align: center;
+}
+
+.clientes {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.clientes__lista {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.clientes__item {
+  transition: transform 0.5s;
+}
+.clientes__item:hover {
+  transform: translate(0px, 20px);
+}
+
+/*---------IMAGEN HOME----------------*/
+.brand {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.brand__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.brand__texto {
+  font-size: 20px;
+}
+
+.brand__titulo {
+  font-size: 70px;
+}
+
+.brand__imagen {
+  width: 100%;
+  max-height: 400px;
+}
+/*-----------FIN IMAGEN HOME---------------*/

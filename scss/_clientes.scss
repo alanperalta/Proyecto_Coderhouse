@@ -1,0 +1,61 @@
+/*---------GRILLA CLIENTES---------------*/
+
+.grilla {
+  display: grid;
+  grid-template-areas:
+    'titulo titulo titulo'
+    'cliente1 cliente2 cliente3'
+    'cliente4 cliente5 cliente6'
+    'contacto contacto contacto';
+  grid-template-rows: 1fr 4fr 4fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  row-gap: 20px;
+}
+
+.carrousel-clientes {
+  display: none;
+  padding: 50px;
+}
+
+@media (max-width: 1200px) {
+  .grilla {
+    display: none;
+  }
+  .carrousel-clientes {
+    display: block;
+  }
+}
+
+#titulo-grilla {
+  grid-area: titulo;
+}
+
+#contacto-grilla {
+  grid-area: contacto;
+}
+
+#cliente1 {
+  grid-area: cliente1;
+}
+
+#cliente2 {
+  grid-area: cliente2;
+}
+
+#cliente3 {
+  grid-area: cliente3;
+}
+
+#cliente4 {
+  grid-area: cliente4;
+}
+
+#cliente5 {
+  grid-area: cliente5;
+}
+
+#cliente6 {
+  grid-area: cliente6;
+}
+/*---------FIN GRILLA CLIENTES---------------*/

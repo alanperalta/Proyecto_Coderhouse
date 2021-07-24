@@ -1,0 +1,81 @@
+/*-------------MENU--------------*/
+header {
+  background-image: linear-gradient(to right, $colorMenuDesde, $colorMenuHasta);
+  margin-bottom: 50px;
+}
+
+.menu {
+  width: 100%;
+  text-align: center;
+  float: right;
+  margin-top: 10px;
+}
+
+#boton-menu-mobile {
+  display: none;
+  margin: 40px;
+  float: right;
+}
+
+@media (max-width: 1200px) {
+  .menu {
+    display: none;
+  }
+  #boton-menu-mobile {
+    display: inline;
+  }
+}
+
+.menu-mobile {
+  list-style: none;
+}
+
+.boton-menu-mobile__img {
+  width: 50px;
+}
+
+.menu__item {
+  font-size: 16px;
+  display: inline;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 25px 20px;
+  display: inline-block;
+}
+
+.menu__link:hover {
+  background-color: #005b1c;
+  color: white;
+}
+
+.logo {
+  height: 100px;
+  width: 300px;
+  margin-left: 10px;
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.logo__imagen {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+nav {
+  width: auto;
+  float: right;
+}
+/*----------FIN MENU-----------------*/

@@ -1,0 +1,31 @@
+/*------------SERVICIOS-----------------*/
+.servicio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 400px;
+}
+
+.servicio__textos {
+  max-width: 50%;
+  margin-left: 20px;
+}
+
+.servicios-home {
+  display: flex;
+}
+
+.servicio-home {
+  text-align: center;
+  padding: 20px;
+}
+
+.servicio__imagen {
+  box-shadow: 1px 1px 25px rgba(#000, 0.35);
+}
+
+.servicio__imagen--home {
+  max-width: 100%;
+}
+
+/*---------FIN SERVICIOS---------------*/
